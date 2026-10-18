@@ -1,0 +1,16 @@
+[Application]
+name=org.vasik96.GtkTube
+runtime=org.gnome.Platform/x86_64/49
+sdk=org.gnome.Sdk/x86_64/49
+command=gtktube
+
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=dri;
+filesystems=home;xdg-run/dconf;/usr/share/themes:ro;host:ro;xdg-data/themes:ro;
+
+[Session Bus Policy]
+org.freedesktop.portal.Desktop=talk
+ca.desrt.dconf=talk
+org.freedesktop.portal.Settings=talk
